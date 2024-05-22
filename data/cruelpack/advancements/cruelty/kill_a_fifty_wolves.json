@@ -1,0 +1,32 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:bone"
+		},
+		"title": {"translate":"Wolf Heart"},
+		"description": {"color":"red","translate":"You attacked first. You provoked them first..."},
+		"announce_to_chat": "true"
+	},
+	"parent": "cruelpack:cruelty/kill_a_wolf",
+	"criteria": {
+		"wolf": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"stats": [
+							{
+								"type": "minecraft:killed",
+								"stat": "minecraft:wolf",
+								"value": {
+									"min": 50
+								}
+							}
+						]
+					}
+				}
+			}
+		}
+	}
+}

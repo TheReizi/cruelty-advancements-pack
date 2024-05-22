@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:lead"
+        },
+        "title": {"translate": "Parenting didn't Go According to Plan"},
+        "description": {"color": "red","translate": "Kill with a lead (FOR ANIMALS) THE ANIMAL ITSELF"},
+        "announce_to_chat": true
+    },
+    "parent": "cruelpack:cruelty/kill_a_friendly_mob_with_book",
+    "criteria": {
+		"lead": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"entity": {
+                    "type": "#cruelpack:friendly_mobs"
+				},
+				"killing_blow": {
+					"source_entity": {
+						"nbt": "{SelectedItem:{id:\"minecraft:lead\"}}"
+					}
+				}
+			}
+		}
+	}
+}

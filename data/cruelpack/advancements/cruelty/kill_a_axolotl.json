@@ -1,0 +1,21 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:axolotl_spawn_egg"
+        },
+        "title": {"translate": "Neither Fish nor Fowl"},
+        "description": {"color": "red","translate": "Kill the poor bug-eyed axolotl, who has never done anything wrong to anyone in his life"},
+        "announce_to_chat": true
+    },
+    "parent": "cruelpack:cruelty/kill_a_friendly_mob",
+    "criteria": {
+        "axolotl": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:axolotl"
+                }
+            }
+        }
+    }
+}

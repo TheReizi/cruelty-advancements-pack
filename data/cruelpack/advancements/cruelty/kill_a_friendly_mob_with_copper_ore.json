@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:copper_ore"
+        },
+        "title": {"translate": "Blood on Oxidized Copper"},
+        "description": {"color": "red","translate": "Stain the copper with the blood of a friendly animal"},
+        "announce_to_chat": true
+    },
+    "parent": "cruelpack:cruelty/kill_a_friendly_mob_with_iron_ore",
+    "criteria": {
+		"copper_ore": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"entity": {
+                    "type": "#cruelpack:friendly_mobs"
+				},
+				"killing_blow": {
+					"source_entity": {
+						"nbt": "{SelectedItem:{id:\"minecraft:copper_ore\"}}"
+					}
+				}
+			}
+		}
+	}
+}

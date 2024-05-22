@@ -1,0 +1,18 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:iron_axe"
+        },
+        "title": {"translate": "The Most Cruel Creature is Man"},
+        "description": {"color": "dark_red","translate": "After completing all the achievements from this datapack, your life will not be the same..."},
+        "announce_to_chat":false,
+        "background": "minecraft:textures/block/nether_wart_block.png",
+        "hidden": true,
+        "show_toast": false
+    },
+    "criteria": {
+        "tick": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}

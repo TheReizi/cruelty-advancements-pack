@@ -1,0 +1,21 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:allay_spawn_egg"
+        },
+        "title": {"translate": "Allay Became Even Quieter.."},
+        "description": {"color": "red","translate": "Nothing falls out of it... Hmm... Killing for pleasure?"},
+        "announce_to_chat": true
+    },
+    "parent": "cruelpack:cruelty/kill_a_friendly_mob",
+    "criteria": {
+        "allay": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:allay"
+                }
+            }
+        }
+    }
+}

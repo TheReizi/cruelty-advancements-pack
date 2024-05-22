@@ -1,0 +1,33 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:diamond"
+		},
+		"title": {"translate":"Allay Genocide"},
+		"description": {"color":"red","translate":"Is killing little angels considered killing little children?"},
+		"announce_to_chat": "true",
+		"frame": "challenge"
+	},
+	"parent": "cruelpack:cruelty/kill_a_fifty_allays",
+	"criteria": {
+		"allay": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"stats": [
+							{
+								"type": "minecraft:killed",
+								"stat": "minecraft:allay",
+								"value": {
+									"min": 100
+								}
+							}
+						]
+					}
+				}
+			}
+		}
+	}
+}

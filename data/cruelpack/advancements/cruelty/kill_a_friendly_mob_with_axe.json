@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:iron_axe"
+        },
+        "title": {"translate": "With Extreme Cruelty"},
+        "description": {"color": "red","translate": "Kill a friendly mob by being particularly brutal towards them"},
+        "announce_to_chat": true
+    },
+    "parent": "cruelpack:cruelty/root",
+    "criteria": {
+		"axe": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"entity": {
+                    "type": "#cruelpack:friendly_mobs"
+				},
+				"killing_blow": {
+					"source_entity": {
+						"nbt": "{SelectedItem:{id:\"minecraft:iron_axe\"}}"
+					}
+				}
+			}
+		}
+	}
+}

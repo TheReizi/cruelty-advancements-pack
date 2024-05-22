@@ -1,0 +1,21 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:villager_spawn_egg"
+        },
+        "title": {"translate": "Destroyer of Fates"},
+        "description": {"color": "red","translate": "You killed a man just because he didn't look like you?"},
+        "announce_to_chat": true
+    },
+    "parent": "cruelpack:cruelty/kill_a_friendly_mob",
+    "criteria": {
+        "villager": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:villager"
+                }
+            }
+        }
+    }
+}

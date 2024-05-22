@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:ancient_debris"
+        },
+        "title": {"translate": "Blood on Toughest Netherite"},
+        "description": {"color": "red","translate": "Stain the netherite with the blood of a friendly animal"},
+        "announce_to_chat": true
+    },
+    "parent": "cruelpack:cruelty/kill_a_friendly_mob_with_quartz_ore",
+    "criteria": {
+		"netherite": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"entity": {
+                    "type": "#cruelpack:friendly_mobs"
+				},
+				"killing_blow": {
+					"source_entity": {
+						"nbt": "{SelectedItem:{id:\"minecraft:ancient_debris\"}}"
+					}
+				}
+			}
+		}
+	}
+}

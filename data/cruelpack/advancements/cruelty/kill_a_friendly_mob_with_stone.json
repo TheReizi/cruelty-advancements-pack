@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:cobblestone"
+        },
+        "title": {"translate": "Mentally Unhealthy Action"},
+        "description": {"color": "red","translate": "Beat a harmless animal to death with a COBBLESTONEEEEEEE!!!!! Are you sure you are a healthy person????"},
+        "announce_to_chat": true
+    },
+    "parent": "cruelpack:cruelty/root",
+    "criteria": {
+		"stone": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"entity": {
+                    "type": "#cruelpack:friendly_mobs"
+				},
+				"killing_blow": {
+					"source_entity": {
+						"nbt": "{SelectedItem:{id:\"minecraft:cobblestone\"}}"
+					}
+				}
+			}
+		}
+	}
+}

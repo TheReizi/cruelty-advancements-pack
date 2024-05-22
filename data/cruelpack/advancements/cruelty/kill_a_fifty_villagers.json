@@ -1,0 +1,32 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:rotten_flesh"
+		},
+		"title": {"translate":"Jack the Ripper"},
+		"description": {"color":"red","translate":"But everyone you killed had a mind"},
+		"announce_to_chat": "true"
+	},
+	"parent": "cruelpack:cruelty/kill_a_villager",
+	"criteria": {
+		"villager": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"stats": [
+							{
+								"type": "minecraft:killed",
+								"stat": "minecraft:villager",
+								"value": {
+									"min": 50
+								}
+							}
+						]
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:poppy"
+        },
+        "title": {"translate": "Bloody Flower"},
+        "description": {"color": "red","translate": "Even the most harmless thing can become a murder weapon..."},
+        "announce_to_chat": true
+    },
+    "parent": "cruelpack:cruelty/root",
+    "criteria": {
+		"poppy": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"entity": {
+                    "type": "#cruelpack:friendly_mobs"
+				},
+				"killing_blow": {
+					"source_entity": {
+						"nbt": "{SelectedItem:{id:\"minecraft:poppy\"}}"
+					}
+				}
+			}
+		}
+	}
+}

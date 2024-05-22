@@ -1,0 +1,33 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:cooked_rabbit"
+		},
+		"title": {"translate":"Mammal Genocide"},
+		"description": {"color":"red","translate":"Take the lives of hundreds of harmless rabbits. Cut off a hundred rabbits' destinies"},
+		"announce_to_chat": "true",
+		"frame": "challenge"
+	},
+	"parent": "cruelpack:cruelty/kill_a_fifty_rabbits",
+	"criteria": {
+		"rabbit": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"stats": [
+							{
+								"type": "minecraft:killed",
+								"stat": "minecraft:rabbit",
+								"value": {
+									"min": 100
+								}
+							}
+						]
+					}
+				}
+			}
+		}
+	}
+}

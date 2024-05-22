@@ -1,0 +1,103 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:beef"
+        },
+        "title": {"translate": "Bloody, Raw, Fresh..."},
+        "description": {"color": "red","translate": "Eat raw meat soaked in the blood of a poor and innocent animal"},
+        "announce_to_chat": true
+    },
+    "parent": "cruelpack:cruelty/kill_a_friendly_mob_with_axe",
+    "criteria": {
+        "beef": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:beef"
+                    ]
+                }
+            }
+        },
+        "porkchop": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:porkchop"
+                    ]
+                }
+            }
+        },
+        "mutton": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:mutton"
+                    ]
+                }
+            }
+        },
+        "chicken": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:chicken"
+                    ]
+                }
+            }
+        },
+        "rabbit": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:rabbit"
+                    ]
+                }
+            }
+        },
+        "cod": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:cod"
+                    ]
+                }
+            }
+        },
+        "salmon": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:salmon"
+                    ]
+                }
+            }
+        },
+        "tropical_fish": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:tropical_fish"
+                    ]
+                }
+            }
+        },
+        "pufferfish": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:pufferfish"
+                    ]
+                }
+            }
+        }
+    }
+}

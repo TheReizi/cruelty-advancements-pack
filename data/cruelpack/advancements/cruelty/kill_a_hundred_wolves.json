@@ -1,0 +1,33 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:beef"
+		},
+		"title": {"translate":"Wolf Genocide"},
+		"description": {"color":"red","translate":"100 times. 100 dying howls and... 0 emotions?... You're a terrible person..."},
+		"announce_to_chat": "true",
+		"frame": "challenge"
+	},
+	"parent": "cruelpack:cruelty/kill_a_fifty_wolves",
+	"criteria": {
+		"wolf": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"stats": [
+							{
+								"type": "minecraft:killed",
+								"stat": "minecraft:wolf",
+								"value": {
+									"min": 100
+								}
+							}
+						]
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:spider_eye"
+		},
+		"title": {"translate":"Competitor to Luis Garavito"},
+		"description": {"color":"red","translate":"Those bastards kill for personal reasons, and you... just like that..."},
+		"announce_to_chat": "true",
+		"frame": "challenge"
+	},
+	"parent": "cruelpack:cruelty/kill_a_fifty_villagers",
+	"criteria": {
+		"villager": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"stats": [
+							{
+								"type": "minecraft:killed",
+								"stat": "minecraft:villager",
+								"value": {
+									"min": 100
+								}
+							}
+						]
+					}
+				}
+			}
+		}
+	}
+}

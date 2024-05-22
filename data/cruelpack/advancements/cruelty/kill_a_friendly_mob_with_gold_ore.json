@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:deepslate_gold_ore"
+        },
+        "title": {"translate": "Blood on Sparkling Gold"},
+        "description": {"color": "red","translate": "Stain the gold with the blood of a friendly animal"},
+        "announce_to_chat": true
+    },
+    "parent": "cruelpack:cruelty/kill_a_friendly_mob_with_copper_ore",
+    "criteria": {
+		"gold_ore": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"entity": {
+                    "type": "#cruelpack:friendly_mobs"
+				},
+				"killing_blow": {
+					"source_entity": {
+						"nbt": "{SelectedItem:{id:\"minecraft:deepslate_gold_ore\"}}"
+					}
+				}
+			}
+		}
+	}
+}

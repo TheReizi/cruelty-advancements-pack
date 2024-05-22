@@ -1,0 +1,21 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:cat_spawn_egg"
+        },
+        "title": {"translate": "You didn't Hear his 'Meow!' Anymore"},
+        "description": {"color": "red","translate": "What kind of bastard do you have to be to allow yourself to kill such a sweet creature?"},
+        "announce_to_chat": true
+    },
+    "parent": "cruelpack:cruelty/kill_a_friendly_mob",
+    "criteria": {
+        "cat": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:cat"
+                }
+            }
+        }
+    }
+}

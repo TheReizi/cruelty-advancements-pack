@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:coal_ore"
+        },
+        "title": {"translate": "Blood on Hot Coals"},
+        "description": {"color": "red","translate": "Stain the coal with the blood of a friendly animal"},
+        "announce_to_chat": true
+    },
+    "parent": "cruelpack:cruelty/root",
+    "criteria": {
+		"coal_ore": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"entity": {
+                    "type": "#cruelpack:friendly_mobs"
+				},
+				"killing_blow": {
+					"source_entity": {
+						"nbt": "{SelectedItem:{id:\"minecraft:coal_ore\"}}"
+					}
+				}
+			}
+		}
+	}
+}

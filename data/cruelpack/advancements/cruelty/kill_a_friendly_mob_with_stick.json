@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:stick"
+        },
+        "title": {"translate": "Overwork"},
+        "description": {"color": "red","translate": "During your next training session, you overdid it with force and simply beat an animal to death, what a bastard you are..."},
+        "announce_to_chat": true
+    },
+    "parent": "cruelpack:cruelty/root",
+    "criteria": {
+		"stick": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"entity": {
+                    "type": "#cruelpack:friendly_mobs"
+				},
+				"killing_blow": {
+					"source_entity": {
+						"nbt": "{SelectedItem:{id:\"minecraft:stick\"}}"
+					}
+				}
+			}
+		}
+	}
+}

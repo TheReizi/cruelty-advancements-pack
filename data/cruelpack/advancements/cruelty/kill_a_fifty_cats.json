@@ -1,0 +1,32 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:cod"
+		},
+		"title": {"translate":"Cat Killer"},
+		"description": {"color":"red","translate":"You saw their cute look, but still cut off their already short life every time"},
+		"announce_to_chat": "true"
+	},
+	"parent": "cruelpack:cruelty/kill_a_cat",
+	"criteria": {
+		"cat": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"stats": [
+							{
+								"type": "minecraft:killed",
+								"stat": "minecraft:cat",
+								"value": {
+									"min": 50
+								}
+							}
+						]
+					}
+				}
+			}
+		}
+	}
+}

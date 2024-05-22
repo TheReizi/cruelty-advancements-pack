@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:nether_quartz_ore"
+        },
+        "title": {"translate": "Blood on Snow-white Quartz"},
+        "description": {"color": "red","translate": "Stain the quartz with the blood of a friendly animal"},
+        "announce_to_chat": true
+    },
+    "parent": "cruelpack:cruelty/kill_a_friendly_mob_with_diamond_ore",
+    "criteria": {
+		"quartz_ore": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"entity": {
+                    "type": "#cruelpack:friendly_mobs"
+				},
+				"killing_blow": {
+					"source_entity": {
+						"nbt": "{SelectedItem:{id:\"minecraft:nether_quartz_ore\"}}"
+					}
+				}
+			}
+		}
+	}
+}

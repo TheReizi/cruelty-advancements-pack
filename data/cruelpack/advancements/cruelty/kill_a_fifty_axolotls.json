@@ -1,0 +1,32 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:pufferfish"
+		},
+		"title": {"translate":"Amphibian Killer"},
+		"description": {"color":"red","translate":"You heard their every squeal, but you continued and continued to kill them."},
+		"announce_to_chat": "true"
+	},
+	"parent": "cruelpack:cruelty/kill_a_axolotl",
+	"criteria": {
+		"axolotl": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"stats": [
+							{
+								"type": "minecraft:killed",
+								"stat": "minecraft:axolotl",
+								"value": {
+									"min": 100
+								}
+							}
+						]
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:tropical_fish"
+		},
+		"title": {"translate":"Nautical Genocide"},
+		"description": {"color":"red","translate":"They didn't deserve the fate you gave them."},
+		"announce_to_chat": "true",
+        "frame": "challenge"
+	},
+	"parent": "cruelpack:cruelty/kill_a_fifty_axolotls",
+	"criteria": {
+		"axolotl": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"stats": [
+							{
+								"type": "minecraft:killed",
+								"stat": "minecraft:axolotl",
+								"value": {
+									"min": 100
+								}
+							}
+						]
+					}
+				}
+			}
+		}
+	}
+}
